@@ -1,12 +1,12 @@
 //your JS code here. If required.
 function updateTime(){
 	 const date = new Date();
-	const ds = date.toLocalDateString();
-	const ts = date.toLocalTimeString();
+	const ds = date.toLocaleDateString();
+	const ts = date.toLocaleTimeString();
  document.getElementById("timer").textContent = ds +','+ts;
 	
 	
 }
 
 updateTime();
-setInterval(updateTimer, 1000);
+setInterval(updateTime, 1000);
